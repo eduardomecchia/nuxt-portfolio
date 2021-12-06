@@ -1,8 +1,8 @@
 <template>
-  <main class="certificates">
+  <main class="projects">
     <div class="container">
-      <h1>Certificates</h1>
-      <p>This is the certificates page</p>
+      <h1>Projects</h1>
+      <p>This is the projects page</p>
     </div>
   </main>
 </template>
