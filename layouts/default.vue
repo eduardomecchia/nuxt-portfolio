@@ -1,7 +1,5 @@
 <template>
-  <main class="pagename">
-    <div class="app">
-      <Nuxt />
-    </div>
-  </main>
+  <div class="app">
+    <Nuxt />
+  </div>
 </template>
