@@ -1,8 +1,6 @@
 <template>
   <main class="pagename">
-    <div class="container">
-      <Navbar/>
-
+    <div class="app">
       <Nuxt />
     </div>
   </main>
