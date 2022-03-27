@@ -42,9 +42,18 @@
         I’m also a big fan of plain and simple problem solving: one of the greatest sources of satisfaction in my life is fixing the problems of those who don’t know their way around technology and most importantly teach them, if possible, to handle similar barriers themselves in the future.</p>
     </main>
 
+    <follow-me />
+
     <footer id="website-footer">&copy; 2022 Eduardo Mecchia</footer>
   </div>
 </template>
 
 <script>
+  import followMe from '../components/follow-me.vue';
+
+  export default {
+    components: {
+      followMe
+    }
+  }
 </script>
