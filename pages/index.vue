@@ -1,7 +1,7 @@
 <template>
   <!-- App wrapper -->
   <div class="app-wrapper">
-    <!-- Navbar -->
+    <!-- Navbar 
     <header>
       <nav id="website-navbar">
         <ul>
@@ -18,7 +18,7 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
     <!-- Jumbotron -->
     <!-- <section id="website-jumbotron">
@@ -31,7 +31,7 @@
         </div>
       </div>
     </section> -->
-    <b-jumbotron></b-jumbotron>
+
     <!-- Content -->
     <main class="home">
       <h1 style="color: red;">WORK IN PROGRESS!</h1>
