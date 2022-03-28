@@ -40,6 +40,12 @@ export default {
 
 <style lang="scss" scoped>
     .follow-me {
+        @media screen and (max-width: 768px) {
+            & {
+                display: none;
+            }
+        }
+
         z-index: 1001;
         position: fixed;
         left: 0;
