@@ -49,7 +49,7 @@ body {
             font-size: 40px;
         }
 
-        &__content {
+        .about__content {
             display: flex;
 
             @media screen and (max-width: 768px) {
@@ -58,7 +58,7 @@ body {
                 }
             }
 
-            &__paragraph {
+            p {
                 width: 50%;
                 padding: 20px;
                 text-align: center;
@@ -71,7 +71,7 @@ body {
                 }
             }
 
-            &__figure {
+            figure {
                 @media screen and (max-width: 768px) {
                     & {
                         width: 100%;
@@ -91,6 +91,10 @@ body {
             }
         }
 
+        .contact__content {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__learn-more {

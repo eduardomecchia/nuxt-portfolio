@@ -44,7 +44,7 @@
         <h2 class="home__section__heading">About me</h2>
         <div class="divider"></div>
 
-        <div class="home__section__content">
+        <div class="home__section__content about__content">
           <p class="home__section__content__paragraph" id="first-paragraph">I’m a 21-year-old software developer from Rome with a strong passion for everything that has to do with technology and innovation.
           I started tinkering with my first PC when I was 7 years old and since that day I have never stopped: I fell in love with the Internet and its being a free and enormous source of knowledge.
           That’s why I decided to dive into web development, dreaming to make people’s lives easier thanks to sophisticated and user-friendly products. I've also chosen this field because of its constant evolution and because of my perpetual desire to grow and learn.
@@ -61,8 +61,9 @@
         <h2 class="home__section__heading">Contact me</h2>
         <div class="divider"></div>
 
-        <div class="home__section__content">
-          
+        <div class="home__section__content contact__content">
+          <p>Feel free to send me an e-mail regarding everything from business enquiries to feedbacks about my portfolio site.</p>
+          <b-button pill variant="primary">Send Mail</b-button>
         </div>
       </section>
     </main>
