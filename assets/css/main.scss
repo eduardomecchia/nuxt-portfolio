@@ -12,6 +12,15 @@ body {
 .home {
     background-color: #f5f5f5;
     padding: 20px 80px;
+
+    &__learn-more {
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    &__paragraph {
+        margin-top: 1000px;
+    }
 }
 
 #website-navbar {
