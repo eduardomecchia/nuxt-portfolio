@@ -37,13 +37,15 @@
       <div class="home__hero-section">
         <h1>Hey! I'm Eduardo, a <strong>full stack web developer</strong>.</h1>
 
-        <NuxtLink to="#first-paragraph">Learn more</NuxtLink>
+        <NuxtLink to="#about">Learn more</NuxtLink>
       </div>
 
-      <p class="home__paragraph" id="first-paragraph">I’m a 21-year-old software developer from Rome with a strong passion for everything that has to do with technology and innovation.
-      I started tinkering with my first PC when I was 7 years old and since that day I have never stopped: I fell in love with the Internet and its being a free and enormous source of knowledge.
-      That’s why I decided to dive into web development, dreaming to make people’s lives easier thanks to sophisticated and user-friendly products. I've also chosen this field because of its constant evolution and because of my perpetual desire to grow and learn.
-      I’m also a big fan of plain and simple problem solving: one of the greatest sources of satisfaction in my life is fixing the problems of those who don’t know their way around technology and most importantly teach them, if possible, to handle similar barriers themselves in the future.</p>
+      <section id="about">
+        <p class="home__paragraph" id="first-paragraph">I’m a 21-year-old software developer from Rome with a strong passion for everything that has to do with technology and innovation.
+        I started tinkering with my first PC when I was 7 years old and since that day I have never stopped: I fell in love with the Internet and its being a free and enormous source of knowledge.
+        That’s why I decided to dive into web development, dreaming to make people’s lives easier thanks to sophisticated and user-friendly products. I've also chosen this field because of its constant evolution and because of my perpetual desire to grow and learn.
+        I’m also a big fan of plain and simple problem solving: one of the greatest sources of satisfaction in my life is fixing the problems of those who don’t know their way around technology and most importantly teach them, if possible, to handle similar barriers themselves in the future.</p>
+      </section>
     </main>
 
     <follow-me />
