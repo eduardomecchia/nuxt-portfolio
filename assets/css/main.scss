@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+$theme-colors: (
+    "blue1": #0487c0,
+    "blue2": #046b93,
+    "grey": #a6bcd4,
+    "blue3": #2ca2d8,
+    "blue4": #044c67
+);
+
 html,
 body {
     height: 100%;
@@ -82,6 +90,15 @@ body {
         cursor: pointer;
         font-weight: bolder;
     }
+}
+
+.divider {
+    text-align: center;
+    height: 12px;
+    width: 180px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(6,68,160,1) 12%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
 }
 
 #website-navbar {

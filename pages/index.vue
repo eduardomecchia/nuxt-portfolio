@@ -42,6 +42,7 @@
 
       <section class="home__section" id="about">
         <h2 class="home__section__heading">About me</h2>
+        <div class="divider"></div>
 
         <div class="home__section__content">
           <p class="home__section__content__paragraph" id="first-paragraph">I’m a 21-year-old software developer from Rome with a strong passion for everything that has to do with technology and innovation.
@@ -55,11 +56,20 @@
           </figure>
         </div>
       </section>
+
+      <section class="home__section" id="contact">
+        <h2 class="home__section__heading">Contact me</h2>
+        <div class="divider"></div>
+
+        <div class="home__section__content">
+          
+        </div>
+      </section>
     </main>
 
     <follow-me />
 
-    <footer id="website-footer">&copy; 2022 Eduardo Mecchia</footer>
+    <footer id="website-footer">&copy;2022 Eduardo Mecchia</footer>
   </div>
 </template>
 
