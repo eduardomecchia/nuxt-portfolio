@@ -19,6 +19,12 @@ body {
 
 .home {
     background-color: map-get($theme-colors, 'light-grey');
+    @media screen and (max-width: 768px) {
+        & {
+            padding: 0 10px;
+        }
+    }
+
     padding: 0 80px;
 
     &__hero-section {
@@ -30,6 +36,7 @@ body {
 
         &__heading {
             font-size: 40px;
+            text-align: center;
         }
     }
 
