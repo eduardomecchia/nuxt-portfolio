@@ -51,7 +51,8 @@
 
           <!-- Photo of me -->
           <figure class="home__section__content__figure">
-            <img src="~/assets/images/person.png" alt="Photo of me">
+            <b-img src="~/assets/images/person.png" fluid alt="Photo of me"></b-img>
+            <!-- <img src="~/assets/images/person.png" alt="Photo of me"> -->
           </figure>
         </div>
       </section>
