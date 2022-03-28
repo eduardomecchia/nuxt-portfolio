@@ -35,12 +35,13 @@
     <!-- Content -->
     <main class="home">
       <div class="home__hero-section">
-        <h1>Hey! I'm Eduardo, a <strong>full stack web developer</strong>.</h1>
+        <h1 class="home__hero-section__heading">Hey! I'm Eduardo, a <strong>full stack web developer</strong>.</h1>
 
         <NuxtLink to="#about">Learn more</NuxtLink>
       </div>
 
-      <section id="about">
+      <section class="home__section" id="about">
+        <h2 class="home__section__heading">About me</h2>
         <p class="home__paragraph" id="first-paragraph">I’m a 21-year-old software developer from Rome with a strong passion for everything that has to do with technology and innovation.
         I started tinkering with my first PC when I was 7 years old and since that day I have never stopped: I fell in love with the Internet and its being a free and enormous source of knowledge.
         That’s why I decided to dive into web development, dreaming to make people’s lives easier thanks to sophisticated and user-friendly products. I've also chosen this field because of its constant evolution and because of my perpetual desire to grow and learn.

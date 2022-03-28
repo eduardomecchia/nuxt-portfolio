@@ -19,11 +19,27 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        &__heading {
+            font-size: 40px;
+        }
+    }
+
+    &__section {
+        background-color: darkviolet;
+        color: white;
+        padding: 20px;
+
+        &__heading {
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+        }
     }
 
     &__learn-more {
         cursor: pointer;
-        font-weight: bold;
+        font-weight: bolder;
     }
 
     &__paragraph {
