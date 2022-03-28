@@ -49,6 +49,10 @@ body {
             font-size: 40px;
         }
 
+        &__content {
+            margin-top: 20px;
+        }
+
         .about__content {
             display: flex;
 
@@ -76,7 +80,6 @@ body {
                     & {
                         width: 100%;
                         order: 1;
-                        margin-top: 20px;
                     }
                 }
 
