@@ -11,7 +11,7 @@ body {
 
 .home {
     background-color: #f5f5f5;
-    padding: 20px 80px;
+    padding: 0 80px;
 
     &__hero-section {
         height: 100vh;
@@ -35,15 +35,33 @@ body {
             font-weight: bold;
             font-size: 30px;
         }
+
+        &__content {
+            display: flex;
+
+            &__paragraph {
+                width: 50%;
+                padding: 20px;
+                text-align: center;
+            }
+
+            &__figure {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    box-shadow: 5px 10px 18px #888;
+                }
+            }
+        }
+
     }
 
     &__learn-more {
         cursor: pointer;
         font-weight: bolder;
-    }
-
-    &__paragraph {
-        // margin-top: 1000px;
     }
 }
 
