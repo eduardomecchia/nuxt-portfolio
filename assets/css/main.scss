@@ -19,13 +19,17 @@ body {
 
 .home {
     background-color: map-get($theme-colors, 'light-grey');
+
     @media screen and (max-width: 768px) {
         & {
-            padding: 0 10px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
-
-    padding: 0 80px;
+    
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 75px;
 
     &__hero-section {
         height: 100vh;
