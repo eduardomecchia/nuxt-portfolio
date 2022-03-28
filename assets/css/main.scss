@@ -39,13 +39,34 @@ body {
         &__content {
             display: flex;
 
+            @media screen and (max-width: 768px) {
+                & {
+                    flex-direction: column;
+                }
+            }
+
             &__paragraph {
                 width: 50%;
                 padding: 20px;
                 text-align: center;
+
+                @media screen and (max-width: 768px) {
+                    & {
+                        width: 100%;
+                        order: 2;
+                    }
+                }
             }
 
             &__figure {
+                @media screen and (max-width: 768px) {
+                    & {
+                        width: 100%;
+                        order: 1;
+                        margin-top: 20px;
+                    }
+                }
+
                 width: 50%;
                 display: flex;
                 justify-content: center;
