@@ -63,7 +63,7 @@
 
         <div class="home__section__content contact__content">
           <p>Feel free to send me an e-mail regarding everything from business enquiries to feedbacks about my portfolio site.</p>
-          <b-button pill variant="primary">Send Mail</b-button>
+          <b-button pill variant="primary" href="mailto:eduardo.mecchia.dev@gmail.com">Send Mail</b-button>
         </div>
       </section>
     </main>
