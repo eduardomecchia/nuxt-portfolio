@@ -34,7 +34,6 @@
 
     <!-- Content -->
     <main class="home">
-      <h1 style="color: red;">WORK IN PROGRESS!</h1>
       <h1>Eduardo Mecchia</h1>
       <p>I’m a 20-year-old Junior Full Stack Web Developer with a strong passion for everything that has to do with technology and innovation.
         I started tinkering with my first PC when I was 7 years old and since that day I have never stopped: I fell in love with the Internet and its being a free and enormous source of knowledge.
