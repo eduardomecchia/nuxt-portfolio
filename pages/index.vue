@@ -36,8 +36,7 @@
     <main class="home">
       <div class="home__hero-section">
         <h1 class="home__hero-section__heading">Hey! I'm Eduardo, a <strong>full stack web developer</strong>.</h1>
-
-        <NuxtLink to="#about">Learn more</NuxtLink>
+        <NuxtLink to="#about" class="btn btn-primary rounded-pill">Learn more</NuxtLink>
       </div>
 
       <section class="home__section" id="about">
