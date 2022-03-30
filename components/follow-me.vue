@@ -33,9 +33,9 @@
 </template>
 
 <script>
-export default {
-    
-}
+    export default {
+        name: 'FollowMe'
+    }
 </script>
 
 <style lang="scss" scoped>
