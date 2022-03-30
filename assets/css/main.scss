@@ -31,6 +31,10 @@ body {
     padding-right: 80px;
     padding-bottom: 75px;
 
+    &__cta {
+        margin-top: 50px;
+    }
+
     &__hero-section {
         height: 100vh;
         display: flex;
@@ -41,6 +45,12 @@ body {
         &__heading {
             font-size: 50px;
             text-align: center;
+
+            @media screen and (max-width: 768px) {
+                & {
+                    font-size: 35px;
+                }
+            }
         }
     }
 
