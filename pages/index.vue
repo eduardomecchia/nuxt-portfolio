@@ -35,13 +35,13 @@
         <!-- Content -->
         <main class="home">
             <div class="home__hero-section">
-                <transition name="slide" appear>
+                <Transition name="slide-in-from-left" appear>
                     <h1 class="home__hero-section__heading">
                         Hey! I'm Eduardo, a
                         <strong class="gradient-text">full stack web developer</strong>.<br/>
                         The website is a WiP, I will be adding my projects and more sections soon!
                     </h1>
-                </transition>
+                </Transition>
 
                 <b-button
                     @click="scrollToElement('about')"
@@ -94,7 +94,7 @@
                         enquiries to feedback about my portfolio site. I will also consider freelance opportunities!
                     </p>
                     <b-button
-                        class="mail-button scale-on-hover"
+                        class="home__cta mail-button scale-on-hover"
                         pill
                         variant="primary"
                         href="mailto:eduardo.mecchia.dev@gmail.com"
