@@ -35,13 +35,16 @@
         <!-- Content -->
         <main class="home">
             <div class="home__hero-section">
-                <h1 class="home__hero-section__heading">
-                Hey! I'm Eduardo, a
-                <strong class="gradient-text">full stack web developer</strong>.<br/>
-                The website is a WiP, I will be adding my projects and more sections soon!</h1>
+                <transition name="slide" appear>
+                    <h1 class="home__hero-section__heading">
+                        Hey! I'm Eduardo, a
+                        <strong class="gradient-text">full stack web developer</strong>.<br/>
+                        The website is a WiP, I will be adding my projects and more sections soon!
+                    </h1>
+                </transition>
 
                 <b-button
-                    @click="scrollToAboutSection(this)"
+                    @click="scrollToElement('about')"
                     class="home__cta mail-button scale-on-hover"
                     pill
                     variant="primary"
@@ -88,7 +91,7 @@
                 <div class="home__section__content contact__content">
                     <p>
                         Feel free to send me an e-mail regarding everything from business
-                        enquiries to feedbacks about my portfolio site.
+                        enquiries to feedback about my portfolio site. I will also consider freelance opportunities!
                     </p>
                     <b-button
                         class="mail-button scale-on-hover"
@@ -109,9 +112,17 @@
 <script>
 export default {
     methods: {
-        scrollToAboutSection(object) {
-            console.log(object);
-            this.$refs.aboutSection.scrollIntoView({ behavior: "smooth" });
+        /**
+         * Scrolls to the element of the given ID
+         * @param {string} id - The ID (HTML) of the element to scroll to
+        */
+        scrollToElement(id) {
+            if (document.querySelector(`#${id}`)) {
+                document.querySelector(`#${id}`).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                });
+            }
         },
     }
 };

@@ -178,3 +178,17 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+// Transitions and animations
+.slide-enter-active {
+    animation: slide-in-from-left .7s;
+}
+
+@keyframes slide-in-from-left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
