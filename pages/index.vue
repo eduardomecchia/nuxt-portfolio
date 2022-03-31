@@ -36,7 +36,7 @@
     <main class="home">
       <div class="home__hero-section">
         <h1 class="home__hero-section__heading">Hey! I'm Eduardo, a <strong>full stack web developer</strong>.<br>The website is a WiP, I will be adding my projects and more sections soon!</h1>
-        <NuxtLink to="#about" class="home__cta btn btn-primary rounded-pill">Learn more</NuxtLink>
+        <NuxtLink to="#about" class="home__cta btn btn-primary rounded-pill scale-on-hover">Learn more</NuxtLink>
       </div>
 
       <section class="home__section" id="about">
@@ -62,7 +62,7 @@
 
         <div class="home__section__content contact__content">
           <p>Feel free to send me an e-mail regarding everything from business enquiries to feedbacks about my portfolio site.</p>
-          <b-button class="mail-button" pill variant="primary" href="mailto:eduardo.mecchia.dev@gmail.com">Send Mail</b-button>
+          <b-button class="mail-button scale-on-hover" pill variant="primary" href="mailto:eduardo.mecchia.dev@gmail.com">Send Mail</b-button>
         </div>
       </section>
     </main>
