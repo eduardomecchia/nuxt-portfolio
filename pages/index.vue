@@ -73,9 +73,9 @@
                     <!-- Photo of me -->
                     <figure class="home__section__content__figure">
                         <b-img
-                        src="~/assets/images/person.png"
-                        fluid
-                        alt="Photo of me"
+                            src="~/assets/images/person.png"
+                            fluid
+                            alt="Photo of me"
                         ></b-img>
                     </figure>
                 </div>
@@ -95,8 +95,7 @@
                         pill
                         variant="primary"
                         href="mailto:eduardo.mecchia.dev@gmail.com"
-                        >Send Mail</b-button
-                    >
+                    >Send Mail</b-button>
                 </div>
             </section>
         </main>
@@ -109,11 +108,11 @@
 
 <script>
 export default {
-  methods: {
-    scrollToAboutSection(object) {
-      console.log(object);
-      this.$refs.aboutSection.scrollIntoView({ behavior: "smooth" });
-    },
-  },
+    methods: {
+        scrollToAboutSection(object) {
+            console.log(object);
+            this.$refs.aboutSection.scrollIntoView({ behavior: "smooth" });
+        },
+    }
 };
 </script>
