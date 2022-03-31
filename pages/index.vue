@@ -35,7 +35,7 @@
     <!-- Content -->
     <main class="home">
       <div class="home__hero-section">
-        <h1 class="home__hero-section__heading">Hey! I'm Eduardo, a <strong>full stack web developer</strong>.<br>The website is a WiP, I will be adding my projects and more sections soon!</h1>
+        <h1 class="home__hero-section__heading">Hey! I'm Eduardo, a <strong class="gradient-text">full stack web developer</strong>.<br>The website is a WiP, I will be adding my projects and more sections soon!</h1>
         <NuxtLink to="#about" class="home__cta btn btn-primary rounded-pill scale-on-hover">Learn more</NuxtLink>
       </div>
 

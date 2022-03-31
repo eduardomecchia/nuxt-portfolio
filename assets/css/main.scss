@@ -131,6 +131,7 @@ body {
     }
 }
 
+// Navbar
 #website-navbar {
     display: flex;
     justify-content: space-between;
@@ -148,6 +149,7 @@ body {
     }
 }
 
+// Footer
 #website-footer {
     width: 100%;
     height: 60px;
@@ -159,7 +161,6 @@ body {
 }
 
 // Helpers
-
 .scale-on-hover {
     transform: scale(1);
     transition: all .2s ease-in-out;
@@ -168,4 +169,11 @@ body {
     &:hover {
         transform: scale(1.05);
     }
+}
+
+.gradient-text {
+    background: -webkit-linear-gradient(270deg, #0048c5 35%, #00ffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
