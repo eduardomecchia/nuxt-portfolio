@@ -105,7 +105,17 @@
 
         <FollowMe />
 
-        <footer id="website-footer">&copy;2022 Eduardo Mecchia</footer>
+        <footer id="website-footer">
+            <div>&copy;2022 Eduardo Mecchia</div>
+
+            <div>
+                <span>Built using Nuxt.js</span>
+
+                <a href="https://nuxtjs.org/" target="_blank">
+                    <img src="nuxt.ico" alt="Image of Nuxt.js framework" width="25" height="25">
+                </a>
+            </div>
+        </footer>
     </div>
 </template>
 
