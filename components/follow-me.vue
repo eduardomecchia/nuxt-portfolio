@@ -42,7 +42,16 @@
     .follow-me {
         @media screen and (max-width: 768px) {
             & {
-                display: none;
+                bottom: 35px;
+                width: 100%;
+                height: auto;
+                top: auto;
+                left: 0;
+                text-align: left;
+
+                ul {
+                    display: flex;
+                }
             }
         }
 
@@ -55,6 +64,7 @@
 
         li {
             transition: transform 425ms cubic-bezier(.69,.03,.03,.93),opacity .15s ease-out;
+            display: inline-block;
 
             a {
                 display: flex;
@@ -72,6 +82,19 @@
                     -webkit-transform: translate3d(20px,0,0);
                     transform: translate3d(20px,0,0);
                 }
+
+                @media screen and (max-width: 768px) {
+                    & {
+                        height: 50px;
+                        width: 50px;
+                        padding-left: 0;
+                        margin-left: 0;
+
+                        &:hover {
+                            transform: none;
+                        }
+                    }
+                }
             }
         }
 
@@ -84,6 +107,14 @@
             color: #7a7a7a;
             font-weight: 600;
             font-size: .65em;
+
+            @media screen and (max-width: 768px) {
+                & {
+                    text-align: left;
+                    padding-left: 10px;
+                    top: -20px;
+                }
+            }
         }
 
         .social-network-icon {
