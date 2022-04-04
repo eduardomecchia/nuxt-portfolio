@@ -40,6 +40,7 @@
 
 <style lang="scss" scoped>
     .follow-me {
+        // TODO: IF YOU BUILD OTHER PAGES, THE BOX ELEMENTS NEED TO DISSOLVE WITH A TRANSITION
         @media screen and (max-width: 768px) {
             & {
                 bottom: 35px;
