@@ -78,7 +78,7 @@
                         <b-img
                             src="~/assets/images/person.png"
                             fluid
-                            alt="Photo of me"
+                            alt="Photo of Eduardo Mecchia"
                         ></b-img>
                     </figure>
                 </div>
