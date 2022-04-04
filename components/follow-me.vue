@@ -40,7 +40,8 @@
 
 <style lang="scss" scoped>
     .follow-me {
-        // TODO: IF YOU BUILD OTHER PAGES, THE BOX ELEMENTS NEED TO DISSOLVE WITH A TRANSITION
+        // TODO: If you build other pages, the box elements need to dissolve with a transition.
+        // THOUGHT: The component probably doesn't pair so well with vertical pages where you have to scroll and read.
         @media screen and (max-width: 768px) {
             & {
                 bottom: 111px;
