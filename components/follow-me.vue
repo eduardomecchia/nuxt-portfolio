@@ -43,7 +43,7 @@
         // TODO: IF YOU BUILD OTHER PAGES, THE BOX ELEMENTS NEED TO DISSOLVE WITH A TRANSITION
         @media screen and (max-width: 768px) {
             & {
-                bottom: 35px;
+                bottom: 111px;
                 width: 100%;
                 height: auto;
                 top: auto;
@@ -62,6 +62,10 @@
         top: calc(50% - (275px / 2));
         width: 55px;
         height: 275px;
+
+        ul {
+            margin: 0; // Necessary cause of reboot.scss, look into it
+        }
 
         li {
             transition: transform 425ms cubic-bezier(.69,.03,.03,.93),opacity .15s ease-out;
