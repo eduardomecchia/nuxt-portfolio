@@ -5,26 +5,26 @@
         {{ project.url }}
         {{ project.image }}
         {{ project.technologies }}
-        {{ project.date }}
         {{ project.github }}
     </div>
 </template>
 
 <script>
+    import Project from './models/Project';
+
     export default {
         name: 'ProjectCard',
 
+        props: {
+            project: {
+                type: Project,
+                required: true
+            }
+        },
+
         data() {
             return {
-                project: {
-                    name: '',
-                    description: '',
-                    image: '',
-                    url: '',
-                    technologies: [],
-                    github: '',
-                    date: ''
-                }
+
             }
         }
     }

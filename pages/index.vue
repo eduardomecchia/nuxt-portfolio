@@ -109,7 +109,7 @@
 
                 <div class="home__section__content contact__content">
                     <div v-for="(project, index) in projects" :key="index">
-                        <ProjectCard />
+                        <ProjectCard :project="project" />
                     </div>
                 </div>
             </section>
@@ -132,22 +132,33 @@
 </template>
 
 <script>
+import Project from '../components/models/Project.js';
+
 export default {
     data() {
         return {
             projects: [
-                {
-                    name: '',
-                    description: '',
-                    image: '',
-                    url: '',
-                    technologies: [],
-                    github: '',
-                    date: ''
-                }
+                new Project(
+                    'Boolflix',
+                    'Netflix-inspired movie database built with Vue.js',
+                    '',
+                    'https://edu-boolflix.netlify.app/',
+                    ['HTML', 'CSS', 'Vue.js'],
+                    'https://github.com/eduardomecchia/vue-boolflix'
+                ),
+                
+                new Project(
+                    'Boolzapp',
+                    'Simple, interactive Vue replica of WhatsApp',
+                    '',
+                    'https://edu-boolzapp.netlify.app/',
+                    ['HTML', 'CSS', 'Vue.js'],
+                    'https://github.com/eduardomecchia/vue-boolzapp'
+                )
             ]
         }
     },
+
     methods: {
         /**
          * Scrolls to the element of the given ID
