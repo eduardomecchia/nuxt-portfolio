@@ -1,11 +1,28 @@
 <template>
     <div class="project-card">
-        {{ project.title }}
-        {{ project.description }}
-        {{ project.url }}
-        {{ project.image }}
-        {{ project.technologies }}
-        {{ project.github }}
+        <div>
+            <img :src="project.image" :alt="'Project image for ' + project.name">
+        </div>
+
+        <div>
+            <b>Title:&nbsp;</b> <span>{{ project.name }}</span>
+        </div>
+
+        <div>
+            <b>Description:&nbsp;</b> <span>{{ project.description }}</span>
+        </div>
+
+        <div>
+            <b>Link:&nbsp;</b> <a :href="project.url">Click here</a>
+        </div>
+        
+        <ul>
+            <li><b>Technologies:&nbsp;</b></li>
+
+            <li v-for="technology in project.technologies">{{ technology }}</li>
+        </ul>
+
+        <b>GitHub repository:&nbsp;</b> <a :href="project.github">Click here</a>
     </div>
 </template>
 
@@ -20,16 +37,18 @@
                 type: Project,
                 required: true
             }
-        },
-
-        data() {
-            return {
-
-            }
         }
     }
 </script>
 
 <style lang="scss" scoped>
-
+    .project-card {
+        margin-bottom: 20px;
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+    }
 </style>

@@ -107,7 +107,7 @@
                 <h2 class="home__section__heading">Projects</h2>
                 <Divider />
 
-                <div class="home__section__content contact__content">
+                <div class="home__section__content projects__content">
                     <div v-for="(project, index) in projects" :key="index">
                         <ProjectCard :project="project" />
                     </div>
