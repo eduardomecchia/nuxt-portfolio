@@ -1,37 +1,6 @@
 <template>
     <!-- App wrapper -->
     <div class="app-wrapper">
-        <!-- Navbar 
-        <header>
-            <nav id="website-navbar">
-                <ul>
-                <li class="navbar-entry">
-                    <a href="#" class="navbar-entry_">Eduardo Mecchia</a>
-                </li>
-
-                <li class="navbar-entry">
-                    <a href="#" class="navbar-entry_">Projects</a>
-                </li>
-                
-                <li class="navbar-entry">
-                    <a href="#" class="navbar-entry_">Contact</a>
-                </li>
-                </ul>
-            </nav>
-        </header> -->
-
-        <!-- Jumbotron -->
-        <!-- <section id="website-jumbotron">
-            <div class="jumbotron">
-                <div class="jumbotron-content">
-                    <h1 class="jumbotron-content_">Eduardo Mecchia</h1>
-                    <p class="jumbotron-content_">
-                        I'm a software developer, currently working at <a href="https://www.linkedin.com/in/eduardo-mecchia-a0a9b7b4/" target="_blank">LinkedIn</a>.
-                    </p>
-                </div>
-            </div>
-        </section> -->
-
         <!-- Content -->
         <main class="home">
             <div class="home__hero-section">
