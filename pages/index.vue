@@ -115,8 +115,6 @@
             </section>
         </main>
 
-        <FollowMe />
-
         <footer id="website-footer">
             <div>&copy;2022 Eduardo Mecchia</div>
 
