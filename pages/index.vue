@@ -35,13 +35,11 @@
         <!-- Content -->
         <main class="home">
             <div class="home__hero-section">
-                <Transition name="slide-in-from-left" appear>
-                    <h1 class="home__hero-section__heading">
-                        Hey! I'm Eduardo, a
-                        <strong class="gradient-text">full stack web developer</strong>.<br/>
-                        The website is a WiP, I will be adding my projects and more sections soon!
-                    </h1>
-                </Transition>
+                <h1 class="home__hero-section__heading slide-in-from-left">
+                    Hey! I'm Eduardo, a
+                    <strong class="gradient-text">full stack web developer</strong>.<br/>
+                    The website is a WiP, I will be adding my projects and more sections soon!
+                </h1>
 
                 <b-button
                     @click="scrollToElement('about')"
@@ -51,6 +49,7 @@
                 >Learn more</b-button>
             </div>
 
+            <!-- About section -->
             <section class="home__section" id="about" ref="aboutSection">
                 <h2 class="home__section__heading">About me</h2>
                 <Divider />
@@ -84,6 +83,7 @@
                 </div>
             </section>
 
+            <!-- Contact section -->
             <section class="home__section" id="contact">
                 <h2 class="home__section__heading">Contact me</h2>
                 <Divider />
@@ -101,6 +101,18 @@
                     >Send Mail</b-button>
                 </div>
             </section>
+
+            <!-- Projects section -->
+            <section class="home__section" id="projects">
+                <h2 class="home__section__heading">Projects</h2>
+                <Divider />
+
+                <div class="home__section__content contact__content">
+                    <div v-for="(project, index) in projects" :key="index">
+                        <ProjectCard />
+                    </div>
+                </div>
+            </section>
         </main>
 
         <FollowMe />
@@ -112,7 +124,7 @@
                 <span>Built using Nuxt.js</span>
 
                 <a href="https://nuxtjs.org/" target="_blank">
-                    <img src="nuxt.ico" alt="Image of Nuxt.js framework" width="25" height="25">
+                    <img src="nuxt.ico" alt="Icon of Nuxt.js framework" width="25" height="25">
                 </a>
             </div>
         </footer>
@@ -121,6 +133,21 @@
 
 <script>
 export default {
+    data() {
+        return {
+            projects: [
+                {
+                    name: '',
+                    description: '',
+                    image: '',
+                    url: '',
+                    technologies: [],
+                    github: '',
+                    date: ''
+                }
+            ]
+        }
+    },
     methods: {
         /**
          * Scrolls to the element of the given ID
