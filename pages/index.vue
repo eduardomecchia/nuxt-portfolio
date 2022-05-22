@@ -77,9 +77,7 @@
                 <Divider />
 
                 <div class="home__section__content projects__content">
-                    <div v-for="(project, index) in projects" :key="index">
-                        <ProjectCard :project="project" />
-                    </div>
+                    <ProjectCard  v-for="(project, index) in projects" :key="index" :project="project"/>
                 </div>
             </section>
         </main>
@@ -108,7 +106,7 @@ export default {
                 new Project(
                     'Boolflix',
                     'Netflix-inspired movie database built with Vue.js',
-                    '',
+                    'boolflix.jpg',
                     'https://edu-boolflix.netlify.app/',
                     ['HTML', 'CSS', 'Vue.js'],
                     'https://github.com/eduardomecchia/vue-boolflix'
@@ -117,7 +115,7 @@ export default {
                 new Project(
                     'Boolzapp',
                     'Simple, interactive Vue replica of WhatsApp',
-                    '',
+                    'boolzapp.jpg',
                     'https://edu-boolzapp.netlify.app/',
                     ['HTML', 'CSS', 'Vue.js'],
                     'https://github.com/eduardomecchia/vue-boolzapp'

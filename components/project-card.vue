@@ -1,10 +1,18 @@
 <template>
     <div class="project-card">
-        <div>
-            <img :src="project.image" :alt="'Project image for ' + project.name">
-        </div>
+        <a :href="project.url" target="_blank">
+            <b-img 
+                fluid 
+                :src="require('~/assets/images/projects/' + project.image)" 
+                :alt="'Project image for ' + project.name"
+                rounded="true"
+                thumbnail
+                width="500"
+                center
+            ></b-img>
+        </a>
 
-        <div>
+        <div class="project-card__title">
             <b>Title:&nbsp;</b> <span>{{ project.name }}</span>
         </div>
 
@@ -13,7 +21,7 @@
         </div>
 
         <div>
-            <b>Link:&nbsp;</b> <a :href="project.url">Click here</a>
+            <b>Link:&nbsp;</b> <a :href="project.url" target="_blank">Click here</a>
         </div>
         
         <ul>
@@ -22,7 +30,7 @@
             <li v-for="technology in project.technologies">{{ technology }}</li>
         </ul>
 
-        <b>GitHub repository:&nbsp;</b> <a :href="project.github">Click here</a>
+        <b>GitHub repository:&nbsp;</b> <a :href="project.github" target="_blank">Click here</a>
     </div>
 </template>
 
@@ -43,12 +51,18 @@
 
 <style lang="scss" scoped>
     .project-card {
-        margin-bottom: 20px;
-        
+        margin-bottom: 40px;
+        background-color: #b9efff;
+        border-radius: 5px;
+        padding: 30px;
+
         ul {
             list-style: none;
             padding: 0;
         }
     
+        &__title {
+            margin-top: 30px;
+        }
     }
 </style>
