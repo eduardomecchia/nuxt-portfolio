@@ -82,38 +82,25 @@
             </section>
         </main>
 
-        <home-footer></home-footer>
+        <HomeFooter />
     </div>
 </template>
 
 <script>
-import Project from '../components/models/Project.js';
+import Project from '../components/models/Project';
+import HomeFooter from '../components/home-footer.vue';
+import Divider from '../components/divider.vue';
+import ProjectCard from '../components/project-card.vue';
 
 export default {
     data() {
         return {
             projects: [
-                new Project(
-                    'Boolflix',
-                    'Netflix-inspired movie database built with Vue.js',
-                    'boolflix.jpg',
-                    'https://edu-boolflix.netlify.app/',
-                    ['HTML', 'CSS', 'Vue.js'],
-                    'https://github.com/eduardomecchia/vue-boolflix'
-                ),
-                
-                new Project(
-                    'Boolzapp',
-                    'Simple, interactive Vue replica of WhatsApp',
-                    'boolzapp.jpg',
-                    'https://edu-boolzapp.netlify.app/',
-                    ['HTML', 'CSS', 'Vue.js'],
-                    'https://github.com/eduardomecchia/vue-boolzapp'
-                )
+                new Project("Boolflix", "Netflix-inspired movie database built with Vue.js", "boolflix.jpg", "https://edu-boolflix.netlify.app/", ["HTML", "CSS", "Vue.js"], "https://github.com/eduardomecchia/vue-boolflix"),
+                new Project("Boolzapp", "Simple, interactive Vue replica of WhatsApp", "boolzapp.jpg", "https://edu-boolzapp.netlify.app/", ["HTML", "CSS", "Vue.js"], "https://github.com/eduardomecchia/vue-boolzapp")
             ]
-        }
+        };
     },
-
     methods: {
         /**
          * Scrolls to the element of the given ID
@@ -122,11 +109,12 @@ export default {
         scrollToElement(id) {
             if (document.querySelector(`#${id}`)) {
                 document.querySelector(`#${id}`).scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start',
+                    behavior: "smooth",
+                    block: "start",
                 });
             }
         },
-    }
+    },
+    components: { HomeFooter, Divider, ProjectCard }
 };
 </script>
