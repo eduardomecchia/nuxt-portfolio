@@ -82,17 +82,7 @@
             </section>
         </main>
 
-        <footer id="website-footer">
-            <div>&copy;2022 Eduardo Mecchia</div>
-
-            <div>
-                <span>Built using Nuxt.js</span>
-
-                <a href="https://nuxtjs.org/" target="_blank">
-                    <img src="nuxt.ico" alt="Icon of Nuxt.js framework" width="25" height="25">
-                </a>
-            </div>
-        </footer>
+        <home-footer></home-footer>
     </div>
 </template>
 
