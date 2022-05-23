@@ -1,24 +1,10 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-$theme-colors: (
-    "blue1": #0487c0,
-    "blue2": #046b93,
-    "light-grey": #e4ebf3,
-    "blue3": #2ca2d8,
-    "blue4": #044c67
-);
-
 html,
 body {
     height: 100%;
 }
 
 .home {
-    background-color: map-get($theme-colors, 'light-grey');
+    // background-color: map-get($theme-colors, 'light-grey');
 
     @media screen and (max-width: 768px) {
         & {
@@ -138,51 +124,5 @@ body {
     &__learn-more {
         cursor: pointer;
         font-weight: bolder;
-    }
-}
-
-// Footer
-#website-footer {
-    width: 100%;
-    color: white;
-    background: map-get($theme-colors, 'blue3');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-// Helpers
-.scale-on-hover {
-    transform: scale(1);
-    transition: transform .2s ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-        transform: scale(1.10);
-    }
-}
-
-.gradient-text {
-    background: -webkit-linear-gradient(270deg, #0048c5 35%, #00ffff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-// Transitions and animations
-.slide-in-from-left {
-    animation: slide-in-from-left .5s ease-in-out;
-}
-
-@keyframes slide-in-from-left {
-    from {
-        transform: translate(-100%);
-    }
-
-    to {
-        transform: translate(0);
     }
 }
