@@ -221,7 +221,7 @@ export default {
                 }
 
             }
-            
+
             .technologies {
                 display: flex;
                 justify-content: center;
@@ -245,6 +245,12 @@ export default {
                 justify-content: space-between;
                 align-items: center;
                 margin-top: 20px;
+
+                @media screen and (max-width: 768px) {
+                    & {
+                        justify-content: center;
+                    }
+                }
             }
         }
 
