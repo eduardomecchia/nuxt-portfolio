@@ -88,9 +88,6 @@
 
 <script>
 import Project from '../components/models/Project';
-import HomeFooter from '../components/home-footer.vue';
-import Divider from '../components/divider.vue';
-import ProjectCard from '../components/project-card.vue';
 
 export default {
     data() {
@@ -115,9 +112,7 @@ export default {
                 });
             }
         },
-    },
-
-    components: { HomeFooter, Divider, ProjectCard }
+    }
 };
 </script>
 
@@ -128,7 +123,7 @@ export default {
     }
 
     .home {
-        // background-color: map-get($theme-colors, 'light-grey');
+        background-color: #e4ebf3;
 
         @media screen and (max-width: 768px) {
             & {
@@ -139,7 +134,6 @@ export default {
         
         padding-left: 80px;
         padding-right: 80px;
-        padding-bottom: 75px;
 
         &__cta {
             margin-top: 50px;

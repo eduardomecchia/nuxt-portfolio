@@ -16,8 +16,7 @@
     footer {
         width: 100%;
         color: white;
-        // background: map-get($theme-colors, 'blue3');
-        background: blue;
+        background: #2ca2d8;
         display: flex;
         justify-content: center;
         align-items: center;
