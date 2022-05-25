@@ -50,6 +50,8 @@
                         ></b-img>
                     </figure>
                 </div>
+
+                <div class="technologies">ROWS OF TECHNOLOGIES USED</div>
             </section>
 
             <!-- Contact section -->
@@ -217,6 +219,13 @@ export default {
                         }
                     }
                 }
+
+            }
+            
+            .technologies {
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             .contact__content {
