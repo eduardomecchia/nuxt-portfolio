@@ -3,20 +3,7 @@
     <div class="app-wrapper">
         <!-- Content -->
         <main class="home">
-            <div class="home__hero-section">
-                <h1 class="home__hero-section__heading slide-in-from-left">
-                    Hey! I'm Eduardo, a
-                    <strong class="gradient-text">full stack web developer</strong>.<br/>
-                    The website is a WiP, I will be adding my projects and more sections soon!
-                </h1>
-
-                <b-button
-                    @click="scrollToElement('about')"
-                    class="home__cta mail-button scale-on-hover"
-                    pill
-                    variant="primary"
-                >Learn more</b-button>
-            </div>
+            <Jumbotron></Jumbotron>
 
             <!-- About section -->
             <section class="home__section" id="about" ref="aboutSection">
@@ -110,18 +97,7 @@ export default {
     },
 
     methods: {
-        /**
-         * Scrolls to the element of the given ID
-         * @param {string} id - The ID (HTML) of the element to scroll to
-        */
-        scrollToElement(id) {
-            if (document.querySelector(`#${id}`)) {
-                document.querySelector(`#${id}`).scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                });
-            }
-        },
+        
     }
 };
 </script>
@@ -144,30 +120,6 @@ export default {
         
         padding-left: 80px;
         padding-right: 80px;
-
-        &__cta {
-            margin-top: 50px;
-        }
-
-        &__hero-section {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-weight: 600;
-
-            &__heading {
-                font-size: 50px;
-                text-align: center;
-
-                @media screen and (max-width: 768px) {
-                    & {
-                        font-size: 35px;
-                    }
-                }
-            }
-        }
 
         &__section {
             padding: 20px;
