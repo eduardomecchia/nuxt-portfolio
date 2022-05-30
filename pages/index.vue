@@ -92,7 +92,7 @@
             </section>
         </main>
 
-        <HomeFooter />
+        <StandardFooter />
     </div>
 </template>
 
