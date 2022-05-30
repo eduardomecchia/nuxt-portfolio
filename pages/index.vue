@@ -64,12 +64,20 @@
                         Feel free to send me an e-mail regarding everything from business
                         enquiries to feedback about my portfolio site. I will also consider freelance opportunities!
                     </p>
+
                     <b-button
                         class="home__cta mail-button scale-on-hover"
                         pill
                         variant="primary"
                         href="mailto:eduardo.mecchia.dev@gmail.com"
                     >Send Mail</b-button>
+
+                    <ul class="social-media">
+                        <li>You can also reach me through social media!</li>
+                        
+                        <!-- First instance of social media component -->
+                        <li class="social-media-icon">CYCLE THROUGH SOCIAL MEDIAS</li>
+                    </ul>
                 </div>
             </section>
 
@@ -235,6 +243,15 @@ export default {
 
                 .mail-button {
                     align-self: center;
+                }
+
+                .social-media {
+                    li:first-child {
+                        margin-bottom: 30px;
+                    }
+
+                    margin-top: 50px;
+                    list-style: none;
                 }
             }
 
