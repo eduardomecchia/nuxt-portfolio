@@ -3,48 +3,13 @@
     <div class="app-wrapper">
         <!-- Content -->
         <main class="home">
-            <Jumbotron></Jumbotron>
+            <Jumbotron />
 
-            <!-- About section -->
-            <section class="home__section" id="about" ref="aboutSection">
-                <h2 class="home__section__heading">About me</h2>
-                <Divider />
-
-                <div class="home__section__content about__content">
-                    <p class="home__section__content__paragraph" id="first-paragraph">
-                        I’m a 21-year-old <strong>software developer</strong> from Rome with
-                        a strong passion for everything that has to do with technology and
-                        innovation. I started tinkering with my first PC when I was 7 years
-                        old and since that day I have never stopped: I fell in love with the
-                        Internet and its being a free and enormous source of knowledge.
-                        That’s why I decided to dive into <strong>web development</strong>,
-                        dreaming to make people’s lives easier thanks to sophisticated and
-                        <strong>user-friendly</strong> products. I've also chosen this field
-                        because of its constant evolution and because of my perpetual desire
-                        to grow and learn. I’m also a big fan of plain and simple
-                        <strong>problem solving</strong>: one of the greatest sources of
-                        satisfaction in my life is fixing the problems of those who don’t
-                        know their way around technology and most importantly teach them, if
-                        possible, to handle similar barriers themselves in the future.
-                    </p>
-
-                    <!-- Photo of me -->
-                    <figure class="home__section__content__figure">
-                        <b-img
-                            src="~/assets/images/person.png"
-                            fluid
-                            alt="Photo of Eduardo Mecchia"
-                        ></b-img>
-                    </figure>
-                </div>
-
-                <div class="technologies">ROWS OF TECHNOLOGIES USED</div>
-            </section>
+            <About />
 
             <!-- Contact section -->
             <section class="home__section" id="contact">
-                <h2 class="home__section__heading">Contact me</h2>
-                <Divider />
+                <Heading text="Contact me"></Heading>
 
                 <div class="home__section__content contact__content">
                     <p>
@@ -70,8 +35,7 @@
 
             <!-- Projects section -->
             <section class="home__section" id="projects">
-                <h2 class="home__section__heading">Projects</h2>
-                <Divider />
+                <Heading text="Projects"></Heading>
 
                 <div class="home__section__content projects__content">
                     <ProjectCard  v-for="(project, index) in projects" :key="index" :project="project"/>
@@ -121,74 +85,12 @@ export default {
         padding-left: 80px;
         padding-right: 80px;
 
-        &__section {
-            padding: 20px;
+        &__learn-more {
+            cursor: pointer;
+            font-weight: bolder;
+        }
 
-            &__heading {
-                text-align: center;
-                font-weight: bold;
-                font-size: 40px;
-            }
-
-            &__content {
-                margin-top: 20px;
-            }
-
-            .about__content {
-                display: flex;
-
-                @media screen and (max-width: 768px) {
-                    & {
-                        flex-direction: column;
-                    }
-                }
-
-                p {
-                    width: 50%;
-                    padding: 20px;
-
-                    @media screen and (max-width: 768px) {
-                        & {
-                            width: 100%;
-                            order: 2;
-                        }
-                    }
-                }
-
-                figure {
-                    @media screen and (max-width: 768px) {
-                        & {
-                            width: 100%;
-                            order: 1;
-                        }
-                    }
-
-                    width: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    img {
-                        box-shadow: 5px 10px 18px #888;
-                        transition: all .2s ease-in-out;
-                        cursor: pointer;
-
-                        &:hover {
-                            transform: scale(1.05);
-                            box-shadow: 5px 10px 18px #3b5998;
-                        }
-                    }
-                }
-
-            }
-
-            .technologies {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .contact__content {
+        .contact__content {
                 display: flex;
                 flex-direction: column;
                 text-align: center;
@@ -221,11 +123,5 @@ export default {
                     }
                 }
             }
-        }
-
-        &__learn-more {
-            cursor: pointer;
-            font-weight: bolder;
-        }
     }
 </style>
