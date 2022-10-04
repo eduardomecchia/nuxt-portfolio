@@ -22,11 +22,11 @@
 
             <!-- Photo of me -->
             <figure>
-                <b-img
-                    src="~/assets/images/person.png"
+                <b-img-lazy
+                    src="~/assets/images/playa-tora-paguera.png"
                     fluid
-                    alt="Photo of Eduardo Mecchia"
-                ></b-img>
+                    alt="Photo of Eduardo Mecchia looking at the ocean in Playa Tora, Paguera, Mallorca."
+                ></b-img-lazy>
             </figure>
         </article>
 
@@ -36,60 +36,60 @@
 
 <style lang="scss" scoped>
     section {
-            padding: 20px;
+        padding: 20px;
 
-            article {
-                margin-top: 20px;
-                display: flex;
+        article {
+            margin-top: 20px;
+            display: flex;
+
+            @media screen and (max-width: 768px) {
+                & {
+                    flex-direction: column;
+                }
+            }
+
+            p {
+                width: 50%;
+                padding: 20px;
 
                 @media screen and (max-width: 768px) {
                     & {
-                        flex-direction: column;
-                    }
-                }
-
-                p {
-                    width: 50%;
-                    padding: 20px;
-
-                    @media screen and (max-width: 768px) {
-                        & {
-                            width: 100%;
-                            order: 2;
-                        }
-                    }
-                }
-
-                figure {
-                    @media screen and (max-width: 768px) {
-                        & {
-                            width: 100%;
-                            order: 1;
-                        }
-                    }
-
-                    width: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    img {
-                        box-shadow: 5px 10px 18px #888;
-                        transition: all .2s ease-in-out;
-                        cursor: pointer;
-
-                        &:hover {
-                            transform: scale(1.05);
-                            box-shadow: 5px 10px 18px #3b5998;
-                        }
+                        width: 100%;
+                        order: 2;
                     }
                 }
             }
 
-            .technologies {
+            figure {
+                @media screen and (max-width: 768px) {
+                    & {
+                        width: 100%;
+                        order: 1;
+                    }
+                }
+
+                width: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                img {
+                    box-shadow: 5px 10px 18px #888;
+                    transition: all .2s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        box-shadow: 5px 10px 18px #3b5998;
+                    }
+                }
             }
         }
+
+        .technologies {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 </style>
