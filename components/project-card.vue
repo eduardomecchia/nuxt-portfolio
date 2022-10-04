@@ -51,7 +51,7 @@
 
 <style lang="scss" scoped>
     .project-card {
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         background-color: #b9efff;
         border-radius: 5px;
         padding: 30px;

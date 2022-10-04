@@ -28,7 +28,7 @@
                         <li>You can also reach me through social media!</li>
                         
                         <!-- First instance of social media component -->
-                        <li class="social-media-icon">CYCLE THROUGH SOCIAL MEDIAS</li>
+                        <li class="social-media-icon">LOOP THROUGH SOCIAL MEDIAS</li>
                     </ul>
                 </div>
             </section>
@@ -103,8 +103,8 @@ export default {
                     li:first-child {
                         margin-bottom: 30px;
                     }
-
-                    margin-top: 50px;
+                    
+                    margin: 50px 0;
                     list-style: none;
                 }
             }
