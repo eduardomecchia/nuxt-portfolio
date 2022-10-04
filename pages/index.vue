@@ -113,15 +113,15 @@ export default {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                justify-content: space-evenly;
                 align-items: center;
                 margin-top: 20px;
 
-                @media screen and (max-width: 768px) {
+                /* @media screen and (max-width: 992px) {
                     & {
                         justify-content: center;
                     }
-                }
+                } */
             }
     }
 </style>
