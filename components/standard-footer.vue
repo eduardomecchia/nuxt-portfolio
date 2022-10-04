@@ -21,12 +21,12 @@
     footer {
         width: 100%;
         color: white;
+        text-align: center;
         background: #2ca2d8;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding: 30px 0;
     }
 </style>
