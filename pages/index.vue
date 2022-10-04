@@ -24,12 +24,12 @@
                         href="mailto:eduardo.mecchia.dev@gmail.com"
                     >Send Mail</b-button>
 
-                    <ul class="social-media">
+                    <!-- <ul class="social-media">
                         <li>You can also reach me through social media!</li>
                         
-                        <!-- First instance of social media component -->
+                        // First instance of social media component
                         <li class="social-media-icon">LOOP THROUGH SOCIAL MEDIAS</li>
-                    </ul>
+                    </ul> -->
                 </div>
             </section>
 
@@ -90,6 +90,10 @@ export default {
             font-weight: bolder;
         }
 
+        &__cta {
+            margin-bottom: 50px;
+        }
+
         .contact__content {
                 display: flex;
                 flex-direction: column;
@@ -104,7 +108,7 @@ export default {
                         margin-bottom: 30px;
                     }
                     
-                    margin: 50px 0;
+                    margin-bottom: 50px;
                     list-style: none;
                 }
             }

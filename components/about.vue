@@ -30,7 +30,7 @@
             </figure>
         </article>
 
-        <div class="technologies">ROWS OF TECHNOLOGIES USED</div>
+        <!-- <div class="technologies">ROWS OF TECHNOLOGIES USED</div> -->
     </section>
 </template>
 

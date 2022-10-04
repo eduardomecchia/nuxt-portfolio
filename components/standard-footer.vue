@@ -10,9 +10,9 @@
             </a>
 
             <!-- Second instance of social media component -->
-            <ul>
+           <!--  <ul>
                 <li>ROW OF SOCIAL MEDIA ICONS</li>
-            </ul>
+            </ul> -->
         </div>
     </footer>
 </template>

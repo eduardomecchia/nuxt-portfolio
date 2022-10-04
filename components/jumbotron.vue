@@ -16,22 +16,22 @@
 </template>
 
 <script>
-export default {
-    methods: {
-        /**
-         * Scrolls to the element of the given ID
-         * @param {string} id - The ID (HTML) of the element to scroll to
-        */
-        scrollToElement(id) {
-            if (document.querySelector(`#${id}`)) {
-                document.querySelector(`#${id}`).scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                });
+    export default {
+        methods: {
+            /**
+             * Scrolls to the element of the given ID.
+             * @param {string} id - The ID (HTML) of the element to scroll to.
+            */
+            scrollToElement(id) {
+                if (document.querySelector(`#${id}`)) {
+                    document.querySelector(`#${id}`).scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
             }
         }
     }
-}
 </script>
 
 <style lang="scss" scoped>
