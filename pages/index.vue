@@ -94,6 +94,10 @@ export default {
             margin-bottom: 50px;
         }
 
+        &__section {
+            margin-top: 70vh;
+        }
+
         .contact__content {
                 display: flex;
                 flex-direction: column;
