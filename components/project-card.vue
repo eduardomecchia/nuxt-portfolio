@@ -55,6 +55,7 @@
         background-color: #b9efff;
         border-radius: 5px;
         padding: 30px;
+        max-width: 350px;
 
         ul {
             list-style: none;
