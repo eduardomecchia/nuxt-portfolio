@@ -7,7 +7,7 @@
         height: 12px;
         width: 180px;
         background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(6,68,160,1) 12%, rgba(0,212,255,1) 100%);
+        background: linear-gradient(180deg, rgba(0,72,197,0.7098) 35%, #174596); // the same as the footer, should be unified
         border-radius: 10px;
         margin: 0 auto;
         margin-top: 10px;
