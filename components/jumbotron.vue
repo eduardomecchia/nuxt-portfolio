@@ -3,7 +3,7 @@
         <h1 class="jumbotron__heading slide-in-from-left">
             Hey! I'm Eduardo, a
             <strong class="gradient-text">full stack web developer</strong>.<br/>
-            The website is a WiP, I will be adding my projects and more sections soon!
+            I use a very meticolous approach and the latest best practices in software engineering to deliver advanced solutions that will solve people's problems in an elegant way.
         </h1>
 
         <b-button
