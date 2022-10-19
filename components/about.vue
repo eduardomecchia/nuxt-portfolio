@@ -56,12 +56,14 @@
             p {
                 width: 50%;
                 padding: 20px;
+                text-align: right;
                 
                 @media screen and (max-width: 768px) {
                     & {
                         margin-top: 50px;
                         width: 100%;
                         order: 2;
+                        text-align: center;
                     }
                 }
             }
