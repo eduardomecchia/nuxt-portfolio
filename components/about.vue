@@ -27,11 +27,11 @@
 
             <!-- Photo of me -->
             <figure>
-                <b-img-lazy
+                <b-img
                     src="~/assets/images/playa-tora-paguera.png"
                     fluid
                     alt="Photo of Eduardo Mecchia looking at the ocean in Playa Tora, Paguera, Mallorca."
-                ></b-img-lazy>
+                ></b-img>
             </figure>
         </article>
 
