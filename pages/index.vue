@@ -1,7 +1,6 @@
 <template>
     <!-- App wrapper -->
     <div class="app-wrapper">
-        <canvas></canvas>
         <!-- Content -->
         <main class="home">
             <Jumbotron />
@@ -130,11 +129,6 @@ export default {
                     justify-content: center;
                 }
             } */
-        }
-
-        canvas {
-            position: absolute;
-            z-index: 10000;
         }
     }
 </style>
