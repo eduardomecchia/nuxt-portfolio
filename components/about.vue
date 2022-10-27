@@ -29,6 +29,7 @@
             <figure>
                 <b-img
                     src="~/assets/images/playa-tora-paguera.png"
+                    class="shadow-lg rounded-lg"
                     fluid
                     alt="Photo of Eduardo Mecchia looking at the ocean in Playa Tora, Paguera, Mallorca."
                 ></b-img>
@@ -54,16 +55,15 @@
             }
 
             p {
-                width: 50%;
+                width: 70%;
                 padding: 20px;
-                text-align: right;
+                text-align: justify;
                 
                 @media screen and (max-width: 768px) {
                     & {
                         margin-top: 50px;
                         width: 100%;
                         order: 2;
-                        text-align: center;
                     }
                 }
             }
@@ -76,20 +76,13 @@
                     }
                 }
 
-                width: 50%;
+                width: 60%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
                 img {
-                    box-shadow: 5px 10px 18px #888;
-                    transition: all .2s ease-in-out;
-                    cursor: pointer;
-
-                    &:hover {
-                        transform: scale(1.05);
-                        box-shadow: 5px 10px 18px #3b5998;
-                    }
+                    border: 10px solid #0048c5b5;
                 }
             }
         }
