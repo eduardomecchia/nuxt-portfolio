@@ -123,12 +123,12 @@ export default {
             justify-content: space-evenly;
             align-items: center;
             margin-top: 20px;
-
-            /* @media screen and (max-width: 992px) {
+            
+            @media screen and (max-width: 768px) {
                 & {
-                    justify-content: center;
+                    padding: 20px;
                 }
-            } */
+            }
         }
     }
 </style>
