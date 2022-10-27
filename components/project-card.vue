@@ -1,5 +1,5 @@
 <template>
-    <div class="project-card shadow p-3 mb-5 rounded">
+    <div class="project-card shadow p-3 mb-5 rounded scale-on-hover">
         <a :href="project.url" target="_blank">
             <b-img 
                 fluid 
