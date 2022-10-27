@@ -72,6 +72,7 @@
                         margin-top: 50px;
                         width: 100%;
                         order: 2;
+                        padding: 0;
                     }
                 }
             }
