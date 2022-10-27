@@ -5,7 +5,7 @@
         <main class="home">
             <Jumbotron />
 
-            <About />
+            <About class="home__section" />
 
             <!-- Contact section -->
             <section class="home__section" id="contact">
