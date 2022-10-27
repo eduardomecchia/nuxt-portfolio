@@ -38,7 +38,7 @@
                 <Heading text="Projects"></Heading>
 
                 <div class="home__section__content projects__content">
-                    <ProjectCard  v-for="(project, index) in projects" :key="index" :project="project"/>
+                    <ProjectCard v-for="(project, index) in projects" :key="index" :project="project"/>
                 </div>
             </section>
         </main>
@@ -94,7 +94,7 @@ export default {
         }
 
         &__section {
-            margin-top: 70vh;
+            margin-top: 45vh;
         }
 
         .contact__content {
