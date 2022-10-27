@@ -44,14 +44,8 @@
         font-weight: 600;
 
         &__heading {
-            font-size: 50px;
-            text-align: center;
-
-            @media screen and (max-width: 768px) {
-                & {
-                    font-size: 35px;
-                }
-            }
+            strong { font-size: 40px; }
+            font-size: 40px;
         }
 
         &__cta {
