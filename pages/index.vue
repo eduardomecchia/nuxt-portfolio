@@ -90,7 +90,7 @@ export default {
         }
 
         &__cta {
-            margin-bottom: 50px;
+            margin-top: 50px;
         }
 
         &__section {
