@@ -54,8 +54,41 @@ export default {
     data() {
         return {
             projects: [
-                new Project("Boolflix", "Netflix-inspired movie database built with Vue.js", "boolflix.jpg", "https://edu-boolflix.netlify.app/", ["HTML", "CSS", "Vue.js"], "https://github.com/eduardomecchia/vue-boolflix"),
-                new Project("Boolzapp", "Simple, interactive Vue replica of WhatsApp", "boolzapp.jpg", "https://edu-boolzapp.netlify.app/", ["HTML", "CSS", "Vue.js"], "https://github.com/eduardomecchia/vue-boolzapp")
+                new Project(
+                    "Guess the Number",
+                    "Small application built over the course of a weekend with Electron for the first HR test of my life",
+                    "guess-the-number.png",
+                    "",
+                    ["HTML", "CSS", "Electron"],
+                    "https://github.com/eduardomecchia/guess-the-number"
+                ),
+
+                new Project(
+                    "Eduardo's Task Tracker",
+                    "A responsive single page application built with Vue.js to familiarize myself with Vue CLI and keep track of what I have to watch/read/etc.",
+                    "task-tracker.png",
+                    "https://eduardomecchia.github.io/todos/",
+                    ["HTML", "CSS", "Vue.js"],
+                    "https://github.com/eduardomecchia/todos"
+                ),
+
+                new Project(
+                    "Boolflix",
+                    "Netflix-inspired movie database built with Vue.js",
+                    "boolflix.jpg",
+                    "https://edu-boolflix.netlify.app/",
+                    ["HTML", "CSS", "Vue.js"],
+                    "https://github.com/eduardomecchia/vue-boolflix"
+                ),
+
+                new Project(
+                    "Boolzapp",
+                    "Simple, interactive Vue replica of WhatsApp",
+                    "boolzapp.jpg",
+                    "https://edu-boolzapp.netlify.app/",
+                    ["HTML", "CSS", "Vue.js"],
+                    "https://github.com/eduardomecchia/vue-boolzapp"
+                )
             ]
         };
     },
