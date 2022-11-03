@@ -65,6 +65,7 @@
             .paragraph-container {
                 width: 70%;
                 padding: 20px;
+                padding-right: 25px;
                 text-align: justify;
                 
                 @media screen and (max-width: 768px) {
