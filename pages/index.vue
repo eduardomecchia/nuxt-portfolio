@@ -58,7 +58,7 @@ export default {
                     "Guess the Number",
                     "Small application built over the course of a weekend with Electron for the first HR test of my life",
                     "guess-the-number.png",
-                    "",
+                    "https://drive.google.com/file/d/1USGqq7_gAJyrzaA-ZlHqvfnMFe_EG9gd/view?usp=sharing",
                     ["HTML", "CSS", "Electron"],
                     "https://github.com/eduardomecchia/guess-the-number"
                 ),
