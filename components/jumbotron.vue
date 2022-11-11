@@ -42,11 +42,14 @@
         justify-content: center;
         align-items: center;
         font-weight: 600;
+        background: transparent;
 
         &__heading {
             &,
             strong {
                 font-size: 40px;
+                color: white;
+                z-index: 10000000;
             }
             
             @media screen and (max-width: 768px) {

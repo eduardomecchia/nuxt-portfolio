@@ -56,6 +56,7 @@
         border-radius: 5px;
         padding: 30px;
         max-width: 350px;
+        color: black;
 
         ul {
             list-style: none;
