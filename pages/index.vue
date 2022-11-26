@@ -1,7 +1,7 @@
 <template>
     <!-- App wrapper -->
     <div class="app-wrapper">
-        <canvas id="c"></canvas>
+        <canvas id="matrix"></canvas>
 
         <div class="content">
             <!-- Content -->
@@ -101,58 +101,61 @@ export default {
     },
 
     mounted() {
-        // geting canvas by Boujjou Achraf
-        var c = document.getElementById("c");
-        var ctx = c.getContext("2d");
+        // getting canvas by Boujjou Achraf
+        const matrixCanvas = document.getElementById("matrix");
+        const context = matrixCanvas.getContext("2d");
 
-        //making the canvas full screen
-        c.height = window.innerHeight;
-        c.width = window.innerWidth;
+        // making the canvas full screen
+        matrixCanvas.height = window.innerHeight;
+        matrixCanvas.width = window.innerWidth;
 
-        //chinese characters - taken from the unicode charset
-        var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
-        //converting the string into an array of single characters
+        let matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+
+        // converting the string into an array of single characters
         matrix = matrix.split("");
 
-        var font_size = 10;
-        var columns = c.width/font_size; //number of columns for the rain
-        //an array of drops - one per column
-        var drops = [];
-        //x below is the x coordinate
-        //1 = y co-ordinate of the drop(same for every drop initially)
-        for(var x = 0; x < columns; x++)
+        const fontSize = 10;
+        const columns = matrixCanvas.width / fontSize; //number of columns for the rain
+
+        // an array of drops - one per column
+        const drops = [];
+
+        // x below is the x coordinate
+        // 1 = y coordinate of the drop (same for every drop initially)
+        for (var x = 0; x < columns; x++) {
             drops[x] = 1; 
+        }
 
-        //drawing the characters
-        function draw()
-        {
-            //Black BG for the canvas
-            //translucent BG to show trail
-            ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
-            ctx.fillRect(0, 0, c.width, c.height);
+        // drawing the characters
+        function draw() {
+            // Black BG for the canvas
+            // translucent BG to show trail
+            context.fillStyle = "rgba(0, 0, 0, 0.04)";
+            context.fillRect(0, 0, matrixCanvas.width, matrixCanvas.height);
 
-            ctx.fillStyle = "#0048c5"; // Text color
-            ctx.font = font_size + "px arial";
-            //looping over drops
-            for(var i = 0; i < drops.length; i++)
-            {
-                //a random chinese character to print
-                var text = matrix[Math.floor(Math.random()*matrix.length)];
-                //x = i*font_size, y = value of drops[i]*font_size
-                ctx.fillText(text, i*font_size, drops[i]*font_size);
+            context.fillStyle = "#0048c5"; // Text color
+            context.font = fontSize + "px arial";
 
-                //sending the drop back to the top randomly after it has crossed the screen
-                //adding a randomness to the reset to make the drops scattered on the Y axis
-                if(drops[i]*font_size > c.height && Math.random() > 0.975)
+            // looping over drops
+            for (var i = 0; i < drops.length; i++) {
+                // a random character to print
+                var text = matrix[Math.floor(Math.random() * matrix.length)];
+
+                // x = i*font_size, y = value of drops[i]*font_size
+                context.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                // sending the drop back to the top randomly after it has crossed the screen
+                // adding a randomness to the reset to make the drops scattered on the Y axis
+                if (drops[i]*fontSize > matrixCanvas.height && Math.random() > 0.975) {
                     drops[i] = 0;
+                }
 
-                //incrementing Y coordinate
+                // incrementing Y coordinate
                 drops[i]++;
             }
         }
 
         setInterval(draw, 35);
-
     }
 };
 </script>
