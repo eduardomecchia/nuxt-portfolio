@@ -7,29 +7,13 @@
                 <p>
                     I’m a 21-year-old <strong>software developer</strong> from Rome with
                     a strong passion for everything that has to do with technology and
-                    innovation.
-                </p>
-    
-                <p>
-                    I started tinkering with my first PC when I was 7 years
-                    old and since that day I have never stopped: I fell in love with the
-                    Internet and its being a free and enormous source of knowledge.
+                    innovation. 
                 </p>
                 
                 <p>
                     That’s why I decided to dive into <strong>web development</strong>,
                     dreaming to make people’s lives easier thanks to sophisticated and
-                    <strong>user-friendly</strong> products. I've also chosen this field
-                    because of its constant evolution and because of my perpetual desire
-                    to grow and learn.
-                </p>
-                
-                <p>
-                    I’m a big fan of plain and simple
-                    <strong>problem solving</strong>: one of the greatest sources of
-                    satisfaction in my life is fixing the problems of those who don’t
-                    know their way around technology and most importantly teach them, if
-                    possible, to handle similar barriers themselves in the future.
+                    <strong>user-friendly</strong> products.
                 </p>
             </div>
 
@@ -66,7 +50,23 @@
                 width: 70%;
                 padding: 20px;
                 padding-right: 40px;
-                text-align: justify;
+                text-align: center;
+                vertical-align: middle;
+
+                p,
+                strong {
+                    font-size: 25px;
+                    color: white;
+                    z-index: 10000000;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    & {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                }
                 
                 @media screen and (max-width: 768px) {
                     & {
