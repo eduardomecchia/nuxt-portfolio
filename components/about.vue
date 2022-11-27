@@ -92,6 +92,7 @@
                 align-items: center;
 
                 img {
+                    max-width: 450px;
                     border: 10px solid #0048c5b5;
                 }
             }
