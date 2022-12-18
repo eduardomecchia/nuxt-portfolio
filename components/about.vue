@@ -6,14 +6,18 @@
             <div class="paragraph-container">
                 <p>
                     I’m a 21-year-old <strong>software developer</strong> from Rome with
-                    a strong passion for everything that has to do with technology and
-                    innovation. 
+                    a strong passion for technology.
                 </p>
                 
                 <p>
                     That’s why I decided to dive into <strong>web development</strong>,
                     dreaming to make people’s lives easier thanks to sophisticated and
                     <strong>user-friendly</strong> products.
+                </p>
+
+                <p>
+                    Music is another passion of mine, you can check out my <a href="https://last.fm/eduardomecchia" target="_blank">Last.fm profile</a> to see what I love or what I'm listening to!
+                    <!-- Spotify integration! -->
                 </p>
             </div>
 
