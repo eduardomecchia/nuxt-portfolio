@@ -102,6 +102,12 @@
                 img {
                     max-width: 450px;
                     border: 10px solid #0048c5b5;
+
+                    @media screen and (max-width: 768px) {
+                    & {
+                        max-width: 300px;
+                    }
+                }
                 }
             }
         }
