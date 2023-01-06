@@ -44,9 +44,10 @@
             margin-top: 20px;
             display: flex;
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 900px) {
                 & {
                     flex-direction: column;
+                    align-items: center;
                 }
             }
 
