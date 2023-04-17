@@ -41,6 +41,8 @@
                     <Heading text="Projects"></Heading>
 
                     <div class="home__section__content projects__content">
+                        <p>Unfortunately, most of the projects I've worked on during my career in consultancy are covered by non-disclosure agreements. Here are some old samples!</p>
+
                         <ProjectCard v-for="(project, index) in projects" :key="index" :project="project"/>
                     </div>
                 </section>
