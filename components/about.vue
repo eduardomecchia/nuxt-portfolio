@@ -5,8 +5,8 @@
         <article>
             <div class="paragraph-container">
                 <p>
-                    I’m a 21-year-old <strong>software developer</strong> from Rome with
-                    a strong passion for technology.
+                    I’m a 22-year-old <strong>software developer</strong> from Rome with
+                    a strong passion for technology, psychology, cognition and neurosciences in general.
                 </p>
                 
                 <p>
