@@ -111,12 +111,12 @@ export default {
         matrixCanvas.height = window.innerHeight;
         matrixCanvas.width = window.innerWidth;
 
-        let matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+        let matrix = "אבגדהוזחטיכלמנסעפצקרשת";
 
         // converting the string into an array of single characters
         matrix = matrix.split("");
 
-        const fontSize = 10;
+        const fontSize = 16;
         const columns = matrixCanvas.width / fontSize; //number of columns for the rain
 
         // an array of drops - one per column
