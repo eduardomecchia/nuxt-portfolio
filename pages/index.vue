@@ -17,7 +17,7 @@
                     <div class="home__section__content contact__content">
                         <p>
                             Feel free to send me an e-mail regarding everything from business
-                            enquiries to feedback about my portfolio site. I will also consider freelance opportunities!
+                            enquiries to feedback about my portfolio site. I will also consider freelance opportunities.
                         </p>
 
                         <b-button
@@ -27,12 +27,15 @@
                             href="mailto:eduardo.mecchia.dev@gmail.com"
                         >Send Mail</b-button>
 
-                        <!-- <ul class="social-media">
-                            <li>You can also reach me through social media!</li>
+                        <ul class="social-media">
+                            <li>You can reach me through social media, too!</li>
                             
-                            // First instance of social media component
-                            <li class="social-media-icon">LOOP THROUGH SOCIAL MEDIAS</li>
-                        </ul> -->
+                            <!-- First instance of social media component -->
+                            <li class="social-media-icon" id="linkedin"><a href="https://linkedin.com/in/eduardomecchia"><img src="~/assets/svg/linkedin.svg"></a></li>
+                            <li class="social-media-icon" id="instagram"><a href="https://instagram.com/eduardomecchia"><img src="~/assets/svg/instagram.svg"></a></li>
+                            <li class="social-media-icon" id="github"><a href="https://github.com/eduardomecchia"><img src="~/assets/svg/github.svg"></a></li>
+                            <li class="social-media-icon" id="twitter"><a href="https://twitter.com/eduardo_mecchia"><img src="~/assets/svg/twitter.svg"></a></li>
+                        </ul>
                     </div>
                 </section>
 
@@ -40,7 +43,7 @@
                 <section class="home__section" id="projects">
                     <Heading text="Projects"></Heading>
 
-                    <p>Unfortunately, most of the projects I've worked on during my career in consultancy are covered by non-disclosure agreements. Here are some old samples!</p>
+                    <p>Unfortunately, most of the projects I've worked on during my career are covered by non-disclosure agreements. Here are some VERY old samples.</p>
 
                     <div class="home__section__content projects__content">
                         <ProjectCard v-for="(project, index) in projects" :key="index" :project="project"/>
@@ -172,6 +175,7 @@ export default {
         position: fixed;
         z-index: -1;
     }
+
     .home {
         @media screen and (max-width: 768px) {
             & {
@@ -197,39 +201,61 @@ export default {
 
             p {
                 text-align: center;
+                margin-bottom: 48px;
             }
         }
 
-        .contact__content {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-
-            .mail-button {
-                align-self: center;
-            }
-
-            .social-media {
-                li:first-child {
-                    margin-bottom: 30px;
+        .contact {
+            &__content {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+    
+                .mail-button {
+                    align-self: center;
                 }
-                
-                margin-bottom: 50px;
-                list-style: none;
+    
+                .social-media {
+                    li:first-child {
+                        margin-bottom: 30px;
+                    }
+
+                    li:not(:first-child) {
+                        display: inline-block;
+                        margin: 0 10px;
+                        
+                        img {
+                            color: white;
+                            height: 32px;
+                            width: 32px;
+                        }
+                    }
+                    
+                    margin-top: 50px;
+                    list-style: none;
+
+                    #github {
+                        img {
+                            filter: invert(100%);
+                        }
+                    }
+                }
             }
         }
 
-        .projects__content {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-items: center;
-            margin-top: 20px;
-            
-            @media screen and (max-width: 768px) {
-                & {
-                    padding: 20px;
+        .projects {
+            &__content {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                margin-top: 20px;
+                
+                @media screen and (max-width: 768px) {
+                    & {
+                        padding: 20px;
+                    }
                 }
             }
         }

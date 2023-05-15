@@ -62,7 +62,7 @@
         }
 
         &__cta {
-            margin-top: 50px;
+            margin-top: 24px;
         }
     }
 </style>
