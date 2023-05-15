@@ -6,11 +6,11 @@
             <div class="paragraph-container">
                 <p>
                     I’m a 22-year-old <strong>software developer</strong> from Rome with
-                    a strong passion for technology, psychology, cognition and neurosciences in general.
+                    a strong passion for technology, psychology, neurosciences and cognitive sciences in general.
                 </p>
                 
                 <p>
-                    That’s why I decided to dive into <strong>web development</strong>,
+                    I dove into <strong>web development</strong>,
                     dreaming to make people’s lives easier thanks to sophisticated and
                     <strong>user-friendly</strong> products.
                 </p>
