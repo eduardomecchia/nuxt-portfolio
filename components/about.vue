@@ -10,13 +10,13 @@
                 </p>
                 
                 <p>
-                    I dove into <strong>web development</strong>,
+                    I dove into <strong>web development</strong>
                     dreaming to make people’s lives easier thanks to sophisticated and
                     <strong>user-friendly</strong> products.
                 </p>
 
                 <p>
-                    Music is another passion of mine, you can check out my <a href="https://last.fm/user/eduardomecchia" target="_blank">Last.fm profile</a> to see what I love or what I'm listening to! (I'm also trying to become a pianist, but that's a whole other story 😂).
+                    Music is another passion of mine, you can check out my <a href="https://last.fm/user/eduardomecchia" target="_blank">Last.fm profile</a> to see what I love or what I'm listening to! (I'm also trying to become a pianist, but that's a whole other story 😂)
                     <br>
                     <strong>TRIGGER WARNING:</strong> I'm the most devoted Swiftie you'll ever meet.
                     <!-- Spotify integration! -->
