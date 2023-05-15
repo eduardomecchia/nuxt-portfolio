@@ -192,9 +192,7 @@ export default {
             font-weight: bolder;
         }
 
-        &__cta {
-            margin-top: 50px;
-        }
+        &__cta { }
 
         &__section {
             margin-top: 45vh;
