@@ -135,7 +135,7 @@ export default {
             context.fillStyle = "rgba(0, 0, 0, 0.04)";
             context.fillRect(0, 0, matrixCanvas.width, matrixCanvas.height);
 
-            context.fillStyle = "#0048c5"; // Text color
+            context.fillStyle = "#4000ac"; // Text color
             context.font = fontSize + "px arial";
 
             // looping over drops
