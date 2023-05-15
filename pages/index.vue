@@ -40,9 +40,9 @@
                 <section class="home__section" id="projects">
                     <Heading text="Projects"></Heading>
 
-                    <div class="home__section__content projects__content">
-                        <p>Unfortunately, most of the projects I've worked on during my career in consultancy are covered by non-disclosure agreements. Here are some old samples!</p>
+                    <p>Unfortunately, most of the projects I've worked on during my career in consultancy are covered by non-disclosure agreements. Here are some old samples!</p>
 
+                    <div class="home__section__content projects__content">
                         <ProjectCard v-for="(project, index) in projects" :key="index" :project="project"/>
                     </div>
                 </section>
@@ -175,8 +175,8 @@ export default {
     .home {
         @media screen and (max-width: 768px) {
             & {
-                padding-left: 10px;
-                padding-right: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
             }
         }
         
@@ -194,6 +194,10 @@ export default {
 
         &__section {
             margin-top: 45vh;
+
+            p {
+                text-align: center;
+            }
         }
 
         .contact__content {
