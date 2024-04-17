@@ -21,10 +21,6 @@
                     <strong>TRIGGER WARNING:</strong> I'm the most devoted Swiftie you'll ever meet.
                     <!-- Spotify integration! -->
                 </p>
-
-                <p>
-                    Gaming, on the other hand, is something that was so fundamentally important to me growing up that it's weird to even CALL it a passion. I love pretty much every genre of videogames, but the Metal Gear Saga, Final Fantasy and DotA hold a special place in my heart among others. Here's my <a href="https://www.dotabuff.com/players/113156632">DotaBuff</a>, if you're insane enough to be a DotA player too.
-                </p>
             </div>
 
             <!-- Photo of me -->
