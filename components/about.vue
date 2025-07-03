@@ -6,11 +6,11 @@
             <div class="paragraph-container">
                 <p>
                     I’m a {{ new Date().getFullYear() - 2001 }}-year-old <strong>software developer</strong> from Rome with
-                    a strong passion for technology, psychology, neurosciences and cognitive sciences in general.
+                    a strong passion for technology, psychology and neurosciences in general.
                 </p>
                 
                 <p>
-                    I dove into <strong>web development</strong>
+                    I dove into <strong>web development</strong> {{ new Date().getFullYear() - 2021 }} years ago,
                     dreaming to make people’s lives easier thanks to sophisticated and
                     <strong>user-friendly</strong> products.
                 </p>
