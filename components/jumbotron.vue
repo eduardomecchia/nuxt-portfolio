@@ -1,7 +1,7 @@
 <template>
     <div class="jumbotron">
         <h1 class="jumbotron__heading slide-in-from-left">
-            Hi, I'm Eduardo — a
+            Hi, I'm Eduardo, a
             <strong class="gradient-text">full stack web developer</strong><br/>
             passionate about crafting fast, accessible, and intuitive web experiences using modern technologies and best practices.<br/>
         </h1>
