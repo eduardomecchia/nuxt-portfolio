@@ -5,7 +5,7 @@
         <article>
             <div class="paragraph-container">
                 <p>
-                    I’m a 23-year-old <strong>software developer</strong> from Rome with
+                    I’m a {{ new Date().getFullYear() - 2001 }}-year-old <strong>software developer</strong> from Rome with
                     a strong passion for technology, psychology, neurosciences and cognitive sciences in general.
                 </p>
                 
