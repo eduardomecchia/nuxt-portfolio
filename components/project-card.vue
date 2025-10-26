@@ -53,6 +53,7 @@
     .project-card {
         margin-bottom: 50px;
         background-color: #b9efff;
+        opacity: 0.5;
         border-radius: 5px;
         padding: 30px;
         max-width: 350px;

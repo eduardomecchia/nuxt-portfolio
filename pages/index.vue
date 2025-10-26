@@ -10,6 +10,28 @@
 
                 <About class="home__section" />
 
+                <!-- Brands section -->
+                <section class="brands_section" id="brands">
+                    <Heading text="Brands"></Heading>
+
+                    <p>Unfortunately, most of the projects I've worked on during my career are covered by non-disclosure agreements. Here are some VERY old samples.</p>
+
+                    <div class="brands_section__content brands__content">
+                        <Brand v-for="(brand, index) in brands" :key="index" :brand="brand"/>
+                    </div>
+                </section>
+
+                <!-- Projects section -->
+                <section class="project_section" id="projects">
+                    <Heading text="Projects"></Heading>
+
+                    <p>Unfortunately, most of the projects I've worked on during my career are covered by non-disclosure agreements. Here are some VERY old samples.</p>
+
+                    <div class="project_section__content projects__content">
+                        <ProjectCard v-for="(project, index) in projects" :key="index" :project="project"/>
+                    </div>
+                </section>
+
                 <!-- Contact section -->
                 <section class="home__section" id="contact">
                     <Heading text="Contact me"></Heading>
@@ -36,17 +58,6 @@
                             <li class="social-media-icon" id="github"><a href="https://github.com/eduardomecchia"><img src="~/assets/svg/github.svg"></a></li>
                             <li class="social-media-icon" id="twitter"><a href="https://twitter.com/eduardo_mecchia"><img src="~/assets/svg/twitter.svg"></a></li>
                         </ul>
-                    </div>
-                </section>
-
-                <!-- Projects section -->
-                <section class="home__section" id="projects">
-                    <Heading text="Projects"></Heading>
-
-                    <p>Unfortunately, most of the projects I've worked on during my career are covered by non-disclosure agreements. Here are some VERY old samples.</p>
-
-                    <div class="home__section__content projects__content">
-                        <ProjectCard v-for="(project, index) in projects" :key="index" :project="project"/>
                     </div>
                 </section>
             </main>
@@ -127,7 +138,7 @@ export default {
 
         // x below is the x coordinate
         // 1 = y coordinate of the drop (same for every drop initially)
-        for (var x = 0; x < columns; x++) {
+        for (let x = 0; x < columns; x++) {
             drops[x] = 1; 
         }
 
@@ -142,9 +153,9 @@ export default {
             context.font = fontSize + "px arial";
 
             // looping over drops
-            for (var i = 0; i < drops.length; i++) {
+            for (let i = 0; i < drops.length; i++) {
                 // a random character to print
-                var text = matrix[Math.floor(Math.random() * matrix.length)];
+                const text = matrix[Math.floor(Math.random() * matrix.length)];
 
                 // x = i*font_size, y = value of drops[i]*font_size
                 context.fillText(text, i * fontSize, drops[i] * fontSize);
