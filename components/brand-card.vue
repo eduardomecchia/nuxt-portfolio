@@ -23,8 +23,6 @@
         <div>
             <b>Link:&nbsp;</b> <a :href="brand.website" target="_blank">Click here</a>
         </div>
-        
-        <b>GitHub repository:&nbsp;</b> <a :href="brand.repository" target="_blank">Click here</a>
     </div>
 </template>
 
@@ -46,8 +44,8 @@
 <style lang="scss" scoped>
     .brand {
         margin-bottom: 50px;
-        background-color: #b9efff;
-        opacity: 0.5;
+        background-color: #0d74d3;
+        opacity: 0.75;
         border-radius: 5px;
         padding: 30px;
         max-width: 350px;
@@ -61,5 +59,13 @@
         &__title {
             margin-top: 30px;
         }
+    }
+
+    span, li {
+        color: white;
+    }
+
+    a {
+        color: #9d00ff;
     }
 </style>

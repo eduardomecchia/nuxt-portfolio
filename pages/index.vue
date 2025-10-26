@@ -69,10 +69,20 @@
 
 <script>
 import Project from '../components/models/Project';
+import Brand from '../components/models/Brand';
 
 export default {
     data() {
         return {
+            brands: [
+                new Brand(
+                    "IndieGala",
+                    "Small application built over the course of a weekend with Electron for the first HR test of my life",
+                    "indiegala.png",
+                    "https://indiegala.com",
+                    "https://indiegala.com"
+                ),
+            ],
             projects: [
                 new Project(
                     "Guess the Number",
