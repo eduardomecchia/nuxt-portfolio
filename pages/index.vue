@@ -14,7 +14,7 @@
                 <section class="brands_section" id="brands">
                     <Heading text="Brands"></Heading>
 
-                    <p>Unfortunately, most of the projects I've worked on during my career are covered by non-disclosure agreements. Here are some VERY old samples.</p>
+                    <p>This is a pretty detailed list of the brands I've worked with during my career up until now.</p>
 
                     <div class="brands_section__content brands__content">
                         <Brand v-for="(brand, index) in brands" :key="index" :brand="brand"/>
