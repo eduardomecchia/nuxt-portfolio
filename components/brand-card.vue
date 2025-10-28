@@ -49,7 +49,7 @@
         border-radius: 5px;
         padding: 30px;
         max-width: 350px;
-        color: #c9dcff;
+        color: black;
 
         ul {
             list-style: none;
@@ -71,6 +71,6 @@
     }
 
     b {
-        color: #c9dcff;
+        color: black;
     }
 </style>
