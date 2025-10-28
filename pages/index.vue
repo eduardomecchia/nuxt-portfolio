@@ -235,6 +235,8 @@ export default {
                 }
     
                 .social-media {
+                    margin-bottom: 50px;
+
                     li:first-child {
                         margin-bottom: 30px;
                     }
