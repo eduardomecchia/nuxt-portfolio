@@ -74,6 +74,11 @@
     }
 
     a {
-        color: #9d00ff;
+        font-weight: bold;
+        color: white;
+    }
+
+    b {
+        color: black;
     }
 </style>
